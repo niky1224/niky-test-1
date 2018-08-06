@@ -4,23 +4,51 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        *{margin: 0;padding: 0;box-sizing: border-box}
-        :root{
-            --button-height:32px;
-            --font-size:14px;
-            --button-bg:#fff;
-            --button-active-bg:#eee;
-            --button-radius:4px;
-            --border-color:#999;
-            --border-hover-color:#666;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
         }
+
+        :root {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: #fff;
+            --button-active-bg: #eee;
+            --button-radius: 4px;
+            --border-color: #999;
+            --border-hover-color: red;
+        }
+
+    </style>
+    <style>
+
     </style>
 </head>
 <body>
 <div id="app">
-    <g-buttton></g-buttton>
+    <g-buttton :loading="loading1" @click="loading1=!loading1">
+        1111
+    </g-buttton>
+    <g-buttton icon="setting" :loading="loading2" @click="loading2=!loading2">
+        1111
+    </g-buttton>
+    <g-buttton icon="setting" isposition="right">
+        1111
+    </g-buttton>
+    <g-group-buttton>
+        <g-buttton icon="left">
+            1111
+        </g-buttton>
+        <g-buttton >
+            2222
+        </g-buttton>
+        <g-buttton icon="right" isposition="right">
+            1111
+        </g-buttton>
+    </g-group-buttton>
 </div>
 <script type="text/javascript" src="./src/app.js"></script>
-
+<script type="text/javascript" src="//at.alicdn.com/t/font_776577_o6bcw6ejorr.js"></script>
 </body>
 </html>
