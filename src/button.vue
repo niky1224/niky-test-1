@@ -1,14 +1,15 @@
 <template>
     <button class="g-button" :class="{[`icon-${isposition}`]:true}" @click="methodsBtn">
-        <g-icon v-if="icon&&!loading" :name="icon"></g-icon>
-        <g-icon v-if="loading"  class="loading icon" name="loading"></g-icon>
+        <g-icon v-if="icon&&!loading" :name="icon"/>
+        <g-icon v-if="loading" class="loading icon" name="loading"/>
         <div class="content">
-            <slot></slot>
+            <slot/>
         </div>
     </button>
 </template>
 
 <script>
+    debugger;
     import ICON from './icon'
     export default {
         //props: ['icon', 'isposition']
@@ -79,8 +80,9 @@
                 order: 1;
             }
         }
+        .loading{
+            animation: move 2s infinite linear;
+        }
     }
-    .loading{
-        animation: move 2s infinite linear;
-    }
+
 </style>

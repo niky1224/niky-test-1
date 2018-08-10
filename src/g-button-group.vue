@@ -1,6 +1,6 @@
 <template>
     <div class="g-group-bntton">
-        <slot></slot>
+        <slot/>
     </div>
 
 </template>
@@ -11,7 +11,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .g-group-bntton{
     display: inline-flex;
     vertical-align: middle;

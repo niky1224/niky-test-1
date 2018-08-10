@@ -1,11 +1,9 @@
 {
-  "name": "niky-test-1",
-  "version": "1.0.0",
+  "name": "niky-test-13",
+  "version": "0.0.6",
   "description": "test",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "p": "parcel index.html --no-cache",
-    "pre": "parcel index.html",
     "dev-test": "parcel watch test/* --no-cache & karma start",
     "test": "parcel build test/* --no-cache --no-minify && karma start --single-run"
   },
@@ -20,11 +18,11 @@
   },
   "homepage": "https://github.com/niky1224/niky-test-1#readme",
   "dependencies": {
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "vue-hot-reload-api": "^2.3.0"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.1.0",
-    "babel-preset-env": "^1.7.0",
     "chai": "^4.1.2",
     "karma": "^2.0.5",
     "karma-chai": "^0.1.0",
@@ -35,7 +33,6 @@
     "mocha": "^5.2.0",
     "node-sass": "^4.9.2",
     "parcel-bundler": "^1.9.7",
-    "parcel-plugin-vue": "^1.5.0",
     "sinon": "^6.1.4",
     "sinon-chai": "^3.2.0",
     "vue-template-compiler": "^2.5.16"
