@@ -5,6 +5,7 @@
 
 
 ##作者
+
     niky
     
     
@@ -12,10 +13,12 @@
 
 
 1.添加样式
+
     在网站全局css中开启box-sizing:border-box
     
     
 2.安装
+
     npm/cnpm install niky-test-13
     
     
