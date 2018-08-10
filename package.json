@@ -1,6 +1,6 @@
 {
   "name": "niky-test-13",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "test",
   "main": "dist/index.js",
   "scripts": {
